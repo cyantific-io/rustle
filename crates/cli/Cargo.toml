@@ -1,0 +1,26 @@
+[package]
+name = "cargo-rustle"
+description = "Cargo subcommand to build, test and check Rust projects on a remote host over SSH"
+version.workspace = true
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "../../README.md"
+
+[[bin]]
+name = "cargo-rustle"
+path = "src/main.rs"
+
+[dependencies]
+rustle-core.workspace = true
+clap.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+rpassword.workspace = true
+dirs.workspace = true
