@@ -1,0 +1,23 @@
+[package]
+name = "rustle-core"
+description = "Core domain and adapters for building Rust projects on remote hosts"
+version.workspace = true
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+repository.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+tokio.workspace = true
+futures.workspace = true
+tracing.workspace = true
+serde.workspace = true
+toml.workspace = true
+cargo_metadata.workspace = true
+dirs.workspace = true
+
+# Pure-Rust SSH transport (SFTP transfer + exec channel)
+russh.workspace = true
+russh-sftp.workspace = true
+walkdir.workspace = true
